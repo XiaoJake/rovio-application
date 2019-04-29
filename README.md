@@ -2,6 +2,7 @@
 #### ● rovio-application and installation
 #### ● Used Intel D435i - stereo setup
 
+<br><br>
 
 ## Requirements and installation
 
