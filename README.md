@@ -7,7 +7,7 @@
 + Install [kindr](https://github.com/ANYbotics/kindr)
 ~~~shell
  $ cd ~/catkin_ws/src && git clone https://github.com/ANYbotics/kindr
- $ cd .. & catkin build -j8
+ $ cd .. && catkin build -j8
 ~~~
 + Install lightweight_filtering and ROVIO
 ~~~shell
