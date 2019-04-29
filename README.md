@@ -12,6 +12,8 @@
 + Install lightweight_filtering and ROVIO
 ~~~shell
  $ cd ~/catkin_ws/src && git clone https://github.com/ethz-asl/rovio
+ $ cd rovio && git submodule update --init --recursive
+ 
  $ cd ..
  $ catkin build rovio --cmake-args -DCMAKE_BUILD_TYPE=Release
  
