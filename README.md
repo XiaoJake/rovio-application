@@ -1,8 +1,12 @@
 # rovio-application
 + rovio-application and installation
++ Used Intel D435i - stereo setup
 
 
 ## Requirements and installation
+
++ [IntelD435i setup and calibration](https://github.com/engcang/VINS-application/tree/Intel-D435i)
+  + Used [Kalibr](https://github.com/ethz-asl/kalibr) as [here](https://github.com/engcang/vins-application#-calibration--kalibr---synchronization-time-offset-extrinsic-parameter) and referred [here](https://support.stereolabs.com/hc/en-us/articles/360012749113-How-can-I-use-Kalibr-with-the-ZED-Mini-camera-in-ROS-)
 
 + ROVIO official [homepage](https://github.com/ethz-asl/rovio)
 
