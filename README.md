@@ -2,6 +2,7 @@
 #### ● rovio-application and installation
 #### ● Used Intel D435i - stereo setup
 #### ● ROVIO official [homepage](https://github.com/ethz-asl/rovio)
+#### ● Result [clip](https://youtu.be/_o2KwT8jJN0)
 
 <br><br>
 
