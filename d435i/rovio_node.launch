@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?> 
 <launch>
+  <node name="rvizvisualisation" pkg="rviz" type="rviz" args="-d $(find rovio)/cfg/rovio_rviz_config.rviz" />
   <node pkg="rovio" type="rovio_node" name="rovio" output="screen">
   <param name="filter_config" value="$(find rovio)/cfg/rovio_test.info"/>
   <param name="camera0_config" value="$(find rovio)/cfg/rovio_cam1.yaml"/>
