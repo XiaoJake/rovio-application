@@ -2,7 +2,7 @@
 ; #include "/home/user/workspace/rovio/cfg/rovio_custom.info"
 Common
 {
-    doVECalibration true;                                       Should the camera-IMU extrinsics be calibrated online
+    doVECalibration false;                                       Should the camera-IMU extrinsics be calibrated online
     depthType 1;                                                Type of depth parametrization (0: normal, 1: inverse depth, 2: log, 3: hyperbolic)
     verbose false;                                              Is the verbose active
 }
@@ -75,7 +75,7 @@ ImgUpdate
   updateVecNormTermination 1e-4;
   maxNumIteration 20;
     doPatchWarping true;                    Should the patches be warped
-    doFrameVisualisation false;                 Should the frames be visualized
+    doFrameVisualisation true;                 Should the frames be visualized
     visualizePatches false;                   Should the patches be visualized
     useDirectMethod true;                   Should the EKF-innovation be based on direct intensity error (o.w. reprojection error)
     startLevel 2;                       Highest patch level which is being employed (must be smaller than the hardcoded template parameter)
@@ -139,7 +139,7 @@ ImgUpdate
         }
         MahalanobisTh0 7.689997599999999;           Mahalanobid distance for zero velocity updates
         minNoMotionTime 1.0;                  Min duration of no-motion
-        isEnabled 1;                      Should zero velocity update be applied, only works if MotionDetection.isEnabled is true
+        isEnabled 0;                      Should zero velocity update be applied, only works if MotionDetection.isEnabled is true
     }
 }
 Prediction
@@ -149,9 +149,9 @@ Prediction
         pos_0 1e-4;               X-covariance parameter of position prediction [m^2/s]
         pos_1 1e-4;               Y-covariance parameter of position prediction [m^2/s]
         pos_2 1e-4;               Z-covariance parameter of position prediction [m^2/s]
-        vel_0 4e-5;               X-covariance parameter of velocity prediction [m^2/s^3]
-        vel_1 4e-5;               Y-covariance parameter of velocity prediction [m^2/s^3]
-        vel_2 4e-5;               Z-covariance parameter of velocity prediction [m^2/s^3]
+        vel_0 4e-6;               X-covariance parameter of velocity prediction [m^2/s^3]
+        vel_1 4e-6;               Y-covariance parameter of velocity prediction [m^2/s^3]
+        vel_2 4e-6;               Z-covariance parameter of velocity prediction [m^2/s^3]
         acb_0 1e-8;               X-covariance parameter of accelerometer bias prediction [m^2/s^5]
         acb_1 1e-8;               Y-covariance parameter of accelerometer bias prediction [m^2/s^5]
         acb_2 1e-8;               Z-covariance parameter of accelerometer bias prediction [m^2/s^5]
@@ -202,14 +202,14 @@ PoseUpdate
     qVM_x 0;                  X-entry of quaterion representing IMU to reference body coordinate frame of pose measurement (Hamilton)
     qVM_y 0;                  Y-entry of quaterion representing IMU to reference body coordinate frame of pose measurement (Hamilton)
     qVM_z 0;                  Z-entry of quaterion representing IMU to reference body coordinate frame of pose measurement (Hamilton)
-    qVM_w -1;                 W-entry of quaterion representing IMU to reference body coordinate frame of pose measurement (Hamilton)
+    qVM_w 1;                 W-entry of quaterion representing IMU to reference body coordinate frame of pose measurement (Hamilton)
     MrMV_x 0;                 X-entry of vector representing IMU to reference body coordinate frame of pose measurement
     MrMV_y 0;                 Y-entry of vector representing IMU to reference body coordinate frame of pose measurement
     MrMV_z 0;                 Z-entry of vector representing IMU to reference body coordinate frame of pose measurement
     qWI_x 0;                  X-entry of quaterion representing World to reference inertial coordinate frame of pose measurement (Hamilton)
     qWI_y 0;                  Y-entry of quaterion representing World to reference inertial coordinate frame of pose measurement (Hamilton)
     qWI_z 0;                  Z-entry of quaterion representing World to reference inertial coordinate frame of pose measurement (Hamilton)
-    qWI_w -1;                 W-entry of quaterion representing World to reference inertial coordinate frame of pose measurement (Hamilton)
+    qWI_w 1;                 W-entry of quaterion representing World to reference inertial coordinate frame of pose measurement (Hamilton)
     IrIW_x 0;                 X-entry of vector representing World to reference inertial coordinate frame of pose measurement
     IrIW_y 0;                 Y-entry of vector representing World to reference inertial coordinate frame of pose measurement
     IrIW_z 0;                 Z-entry of vector representing World to reference inertial coordinate frame of pose measurement
