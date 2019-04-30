@@ -9,24 +9,13 @@ Common
 Camera0
 {
   CalibrationFile  ;            Camera-Calibration file for intrinsics
-  qCM_x  0.500878515967;                               X-entry of IMU to Camera quaterion (Hamilton)
-  qCM_y  -0.50215775337;                               Y-entry of IMU to Camera quaterion (Hamilton)
-  qCM_z  0.499875139004;                               Z-entry of IMU to Camera quaterion (Hamilton)
-  qCM_w  0.497074590357;                               W-entry of IMU to Camera quaterion (Hamilton)
-  MrMC_x -0.000718360921092;                               X-entry of IMU to Camera vector (expressed in IMU CF) [m]
-  MrMC_y 0.00235800650371;                               Y-entry of IMU to Camera vector (expressed in IMU CF) [m]
-  MrMC_z -0.0156921600877;                               Z-entry of IMU to Camera vector (expressed in IMU CF) [m]
-}
-Camera1
-{
-  CalibrationFile  ;            Camera-Calibration file for intrinsics
-  qCM_x  0.501376220438;                               X-entry of IMU to Camera quaterion (Hamilton)
-  qCM_y  -0.501785637138;                               Y-entry of IMU to Camera quaterion (Hamilton)
-  qCM_z  0.499493410274;                               Z-entry of IMU to Camera quaterion (Hamilton)
-  qCM_w  0.497332276284;                               W-entry of IMU to Camera quaterion (Hamilton)
-  MrMC_x -0.000844803704834;                               X-entry of IMU to Camera vector (expressed in IMU CF) [m]
-  MrMC_y -0.0472880517758;                               Y-entry of IMU to Camera vector (expressed in IMU CF) [m]
-  MrMC_z -0.0155680423725;                               Z-entry of IMU to Camera vector (expressed in IMU CF) [m]
+  qCM_x  0.707914296201;                               X-entry of IMU to Camera quaterion (Hamilton)
+  qCM_y  -0.70628107367;                               Y-entry of IMU to Camera quaterion (Hamilton)
+  qCM_z  0.0048938369772;                               Z-entry of IMU to Camera quaterion (Hamilton)
+  qCM_w  0.000666760288227;                               W-entry of IMU to Camera quaterion (Hamilton)
+  MrMC_x -0.000957611385327;                               X-entry of IMU to Camera vector (expressed in IMU CF) [m]
+  MrMC_y -0.00587761470633;                               Y-entry of IMU to Camera vector (expressed in IMU CF) [m]
+  MrMC_z -0.0256254953172;                               Z-entry of IMU to Camera vector (expressed in IMU CF) [m]
 }
 Init
 {
@@ -202,14 +191,14 @@ PoseUpdate
     qVM_x 0;                  X-entry of quaterion representing IMU to reference body coordinate frame of pose measurement (Hamilton)
     qVM_y 0;                  Y-entry of quaterion representing IMU to reference body coordinate frame of pose measurement (Hamilton)
     qVM_z 0;                  Z-entry of quaterion representing IMU to reference body coordinate frame of pose measurement (Hamilton)
-    qVM_w 1;                 W-entry of quaterion representing IMU to reference body coordinate frame of pose measurement (Hamilton)
+    qVM_w -1;                 W-entry of quaterion representing IMU to reference body coordinate frame of pose measurement (Hamilton)
     MrMV_x 0;                 X-entry of vector representing IMU to reference body coordinate frame of pose measurement
     MrMV_y 0;                 Y-entry of vector representing IMU to reference body coordinate frame of pose measurement
     MrMV_z 0;                 Z-entry of vector representing IMU to reference body coordinate frame of pose measurement
     qWI_x 0;                  X-entry of quaterion representing World to reference inertial coordinate frame of pose measurement (Hamilton)
     qWI_y 0;                  Y-entry of quaterion representing World to reference inertial coordinate frame of pose measurement (Hamilton)
     qWI_z 0;                  Z-entry of quaterion representing World to reference inertial coordinate frame of pose measurement (Hamilton)
-    qWI_w 1;                 W-entry of quaterion representing World to reference inertial coordinate frame of pose measurement (Hamilton)
+    qWI_w -1;                 W-entry of quaterion representing World to reference inertial coordinate frame of pose measurement (Hamilton)
     IrIW_x 0;                 X-entry of vector representing World to reference inertial coordinate frame of pose measurement
     IrIW_y 0;                 Y-entry of vector representing World to reference inertial coordinate frame of pose measurement
     IrIW_z 0;                 Z-entry of vector representing World to reference inertial coordinate frame of pose measurement
