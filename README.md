@@ -2,7 +2,8 @@
 #### ● rovio-application and installation
 #### ● Used Intel D435i - stereo setup
 #### ● ROVIO official [homepage](https://github.com/ethz-asl/rovio)
-### ● Result [clip1](https://youtu.be/_o2KwT8jJN0) : Mono, 30fps, 25 features, 6x6 pathches, 4 NLevel -> big error (scaled)
+#### ● Result [clip1](https://youtu.be/_o2KwT8jJN0) : Mono, 30fps, 25 features, 6x6 pathches, 4 NLevel -> big error (scaled)
+#### ● ROVIO on flightgoggles [clip2](https://youtu.be/3Xgwi7k6css), ROVIO vs VINS-Mono [clip3](https://youtu.be/n0N2qDcNcBQ)
 
 <br><br>
 
