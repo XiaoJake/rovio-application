@@ -35,3 +35,6 @@
   $ sudo apt-get install freeglut3-dev libglew-dev
   $ catkin build rovio --cmake-args -DCMAKE_BUILD_TYPE=Release -DMAKE_SCENE=ON
  ~~~
+ 
+ ### ● on [Flightgoggles](http://flightgoggles.mit.edu), need gray scale image
+ + used this [file](https://github.com/engcang/rovio-application/blob/master/flightgoggles-rovio/scripts/rgb2gray.py)
