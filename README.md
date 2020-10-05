@@ -17,6 +17,10 @@
   ~~~shell
   $ rosrun kalibr kalibr_rovio_config --cam <cam-chain.yaml filename>
   ~~~
+## Important
+  + After using kalibr to convert the calibration result files to rovio_config files,
+  + Make sure to Edit ***Camera1 and Camera2*** into ***Camera0 and Camera1*** in ***.info*** file
+  + Make sure to Add ***Velocity Updates*** block in ***.info*** file
 
 ### ● Install [kindr](https://github.com/ANYbotics/kindr)
  ~~~shell
