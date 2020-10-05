@@ -1,13 +1,13 @@
 # rovio-application
 #### ● rovio-application and installation
-#### ● Used Intel D435i - stereo setup
+#### ● Used Intel D435i - stereo setup / FlightGoggles and so on
 #### ● ROVIO official [homepage](https://github.com/ethz-asl/rovio)
+### ● Changed *Tracker* OpenCV Window to ROS topic at [here](https://github.com/engcang/rovio)
 ## ● Result
 + Real world on Xavier [clip1](https://youtu.be/_o2KwT8jJN0) : Mono, 30fps, 25 features, 6x6 pathches, 4 NLevel -> big error (scaled)
 + ROVIO on flightgoggles [clip2](https://youtu.be/3Xgwi7k6css)
 + ROVIO vs VINS-Mono [clip3](https://youtu.be/n0N2qDcNcBQ)
 + VINS-Mono vs ROVIO vs ORB-SLAM2 [clip4](https://youtu.be/XMyiNlIbDXU)
-
 <br><br>
 
 ## Requirements and installation
@@ -17,10 +17,13 @@
   ~~~shell
   $ rosrun kalibr kalibr_rovio_config --cam <cam-chain.yaml filename>
   ~~~
-## Important
+## ● Important
   + After using kalibr to convert the calibration result files to rovio_config files,
   + Make sure to Edit ***Camera1 and Camera2*** into ***Camera0 and Camera1*** in ***.info*** file
   + Make sure to Add ***Velocity Updates*** block in ***.info*** file
+
+<br>
+<br>
 
 ### ● Install [kindr](https://github.com/ANYbotics/kindr)
  ~~~shell
@@ -40,6 +43,8 @@
   $ sudo apt-get install freeglut3-dev libglew-dev
   $ catkin build rovio --cmake-args -DCMAKE_BUILD_TYPE=Release -DMAKE_SCENE=ON
  ~~~
+ 
+ <br>
  
  ### ● on [Flightgoggles](http://flightgoggles.mit.edu), need gray scale image
  + used this [file](https://github.com/engcang/rovio-application/blob/master/flightgoggles-rovio/scripts/rgb2gray.py)
